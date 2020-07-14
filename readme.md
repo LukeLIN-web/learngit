@@ -14,4 +14,4 @@
 ctrl + / 可以快速注释多行
 ctrl + r 运行
 
-
+要运行先装一下curl和rapidjson,crul的编译非常麻烦,搞了一天也没搞定.
