@@ -24,3 +24,20 @@ void MainWindow::createInput(){
 ////    verLayout->insertWidget(1 + i, label);
 ////    }
 }
+
+ // connect(this->ui->pushButton,SIGNAL(clicked(bool)),this,SLOT(on_pushButton_clicked()));//点击按钮 一次出现两个新窗口? 如果把槽函数定义成on_<sender>_<signals>时会发现信号与槽在ui_xxxxx.h头文件中connect了两次，导致的结果是当点击add新建对话框时，会新建2个对话框。
+//注释掉connect项或者注释掉QMetaObject::connectSlotsByName(AddressBookClass);这项即可解决。
+//但是这并不是最好的解决方案，最好的是定义槽函数的时候不按这个规则on_<sender>_《signals>来定义槽函数。
+
+
+  //  QPushButton *pushButton = new QPushButton(this);// 按钮
+   // pushButton->setText("new");  //设置名字
+   // pushButton->setGeometry(400,150,200,20);
+
+//   TextEdit1 =new QTextEdit(this);
+//   TextEdit1->setGeometry(400,150,200,20);
+//   TextEdit1->setAlignment(Qt::AlignCenter);
+
+//   TextEdit2 =new QTextEdit(this);
+//   TextEdit2->setGeometry(400,170,200,20);
+//   TextEdit2->setAlignment(Qt::AlignCenter);
